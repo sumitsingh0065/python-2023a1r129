@@ -1,0 +1,17 @@
+def solve():
+    n = int(input().strip())
+    
+    even_sum = 0
+    odd_sum = 0
+    
+    for _ in range(n):
+        x = int(input().strip())
+        if x % 2 == 0:
+            even_sum += x
+        else:
+            odd_sum += x
+    
+    print(f"Even: {even_sum}")
+    print(f"Odd: {odd_sum}")
+
+solve()
