@@ -1,0 +1,14 @@
+def solve():
+    sentence = input().strip()
+    words = sentence.split()
+    
+    transformed = []
+    for word in words:
+        if len(word) % 2 == 0:
+            transformed.append(word[::-1])  # reverse if even
+        else:
+            transformed.append(word)       # keep if odd
+    
+    print(" ".join(transformed))
+
+solve()
