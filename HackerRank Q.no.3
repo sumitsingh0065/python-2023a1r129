@@ -1,0 +1,17 @@
+
+s = input().strip()
+
+# Mapping for lowercase and uppercase vowels
+next_vowel = {
+    'a': 'e', 'e': 'i', 'i': 'o', 'o': 'u', 'u': 'a',
+    'A': 'E', 'E': 'I', 'I': 'O', 'O': 'U', 'U': 'A'
+}
+
+result = []
+for ch in s:
+    if ch in next_vowel:
+        result.append(next_vowel[ch])
+    else:
+        result.append(ch)
+
+print("".join(result))
