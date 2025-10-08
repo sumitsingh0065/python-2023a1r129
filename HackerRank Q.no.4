@@ -1,0 +1,6 @@
+import string
+text = input().lower()
+alphabet = set(string.ascii_lowercase)
+present = set(c for c in text if c.isalpha())
+missing = alphabet - present
+print(len(missing))
