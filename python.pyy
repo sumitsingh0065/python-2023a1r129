@@ -1,0 +1,4 @@
+def demo(*args, **kwargs):
+    print(args)     # tuple
+    print(kwargs)   # dictionary
+
