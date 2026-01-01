@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+
+# Bar chart
+grouped.plot(kind="bar")
+plt.title("Sales by Category")
+plt.xlabel("Category")
+plt.ylabel("Total Sales")
+plt.show()
